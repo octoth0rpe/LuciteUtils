@@ -1,0 +1,25 @@
+{
+    "name": "lucite/utils",
+    "description": "Misc utility functions used by Lucite projects",
+    "type": "library",
+    "version": "0.0.1",
+    "require-dev": {
+        "psr/http-message": "^2.0",
+        "laravel/pint": "^1.17"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lucite\\Utils\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mike Thorn",
+            "email": "mthorn.work@gmail.com"
+        }
+    ],
+    "scripts": {
+        "format": "pint --preset psr12"
+    }
+}
