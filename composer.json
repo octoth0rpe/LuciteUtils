@@ -1,11 +1,11 @@
 {
     "name": "lucite/utils",
-    "description": "Misc utility functions used by Lucite projects",
+    "description": "Misc utility functions and classes used by Lucite projects",
     "type": "library",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "require-dev": {
-        "psr/http-message": "^2.0",
-        "laravel/pint": "^1.17"
+        "laravel/pint": "^1.17",
+        "phpunit/phpunit": "^11.3"
     },
     "license": "MIT",
     "autoload": {
@@ -20,9 +20,11 @@
         }
     ],
     "scripts": {
-        "format": "pint --preset psr12"
+        "format": "pint --preset psr12",
+        "test": "phpunit tests/"
     },
     "require": {
-        "psr/log": "^3.0"
+        "psr/log": "^3.0",
+        "psr/http-message": "^2.0"
     }
 }
