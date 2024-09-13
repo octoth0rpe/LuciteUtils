@@ -6,10 +6,10 @@ namespace Lucite\Utils;
 
 use Psr\Http\Message\ResponseInterface;
 
-class Response
+class Output
 {
     # https://stackoverflow.com/a/48717426
-    public static function write(ResponseInterface $response)
+    public static function write(ResponseInterface $response): void
     {
         if (headers_sent()) {
             throw new \RuntimeException('Headers were already sent. The response could not be emitted!');
