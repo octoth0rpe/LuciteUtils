@@ -1,14 +1,14 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Lucite\Utils;
 
 use Psr\Http\Message\ResponseInterface;
 
-
 class Response
 {
-	# https://stackoverflow.com/a/48717426
+    # https://stackoverflow.com/a/48717426
     public static function write(ResponseInterface $response)
     {
         if (headers_sent()) {
